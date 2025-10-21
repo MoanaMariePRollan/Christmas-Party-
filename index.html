@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>11-Romans Christmas Party Poster</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11-Romans Christmas Party</title>
+
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Great+Vibes&display=swap');
+
     body {
       font-family: "Poppins", sans-serif;
       margin: 0;
@@ -12,6 +15,23 @@
       background-size: cover;
       color: #333;
       text-align: center;
+      overflow-x: hidden;
+    }
+
+    /* snowflakes ❄️ */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1em;
+      user-select: none;
+      z-index: 9999;
+      animation: fall 10s linear infinite;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+      100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
     }
 
     header {
@@ -19,7 +39,6 @@
       color: white;
       padding: 25px 10px;
       border-bottom: 5px solid gold;
-      position: relative;
     }
 
     header h1 {
@@ -27,6 +46,11 @@
       margin: 0;
       letter-spacing: 2px;
       animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 1.1em;
     }
 
     @keyframes glow {
@@ -85,38 +109,32 @@
       font-weight: bold;
     }
 
-    /* Twinkling lights */
-    .twinkle {
-      position: absolute;
-      top: 10px;
-      width: 100%;
-      text-align: center;
+    /* elegant glowing quote ✨ */
+    .quote {
+      font-family: 'Great Vibes', cursive;
+      font-size: 1.5em;
+      color: gold;
+      margin-top: 10px;
+      text-shadow: 0 0 5px gold, 0 0 10px white;
+      animation: glowQuote 2s ease-in-out infinite alternate;
     }
 
-    .twinkle span {
-      display: inline-block;
-      background: gold;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      margin: 0 5px;
-      animation: twinkle 1.5s infinite alternate;
-    }
-
-    @keyframes twinkle {
-      from { opacity: 0.3; transform: scale(1); }
-      to { opacity: 1; transform: scale(1.4); }
-    }
-
-    .twinkle span:nth-child(odd) {
-      background: white;
-      animation-delay: 0.5s;
+    @keyframes glowQuote {
+      from { text-shadow: 0 0 5px gold; }
+      to { text-shadow: 0 0 20px white; }
     }
   </style>
 </head>
+
 <body>
-  <div class="twinkle">
-    <span></span><span></span><span></span><span></span><span></span><span></span>
+  <!-- snowflakes -->
+  <div class="snowflakes" aria-hidden="true">
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
+    <div class="snowflake">❄</div>
+    <div class="snowflake">❅</div>
+    <div class="snowflake">❆</div>
   </div>
 
   <header>
@@ -127,17 +145,19 @@
   <main>
     <section>
       <figure>
-        <img src="https://raw.githubusercontent.com/MoanaMariePRollan/Christmas-Party-/2511709d5b7745e5869a33e19665aba4398b5c41/a94b6305-d3bb-4075-ba03-d1f0dd43b246.jpeg" alt="Christmas celebration">
+        <img src="https://raw.githubusercontent.com/MoanaMariePRollan/Christmas-Party-/2511709d5b7745e5869a33e19665aba4398b5c41/a94b6305-d3bb-4075-ba03-d1f0dd43b246.jpeg" alt="Christmas celebration" />
         <figcaption>Get ready for a fun and elegant celebration!</figcaption>
       </figure>
 
       <article>
         <h2>Event Details</h2>
         <p><span class="highlight">📅 Date:</span> December 15, 2025</p>
-        <p><span class="highlight">🕗 Time:</span> 8:00 AM - 12:00 PM</p>
-        <p><span class="highlight">📍 Venue:</span> UCC main building 4th floor Room 403</p>
+        <p><span class="highlight">🕗 Time:</span> 8:00 AM Morning – 12:00 PM Afternoon</p>
+        <p><span class="highlight">📍 Venue:</span> UCC Main Building 4th floor room 403</p> 
+      
+        
         <p><span class="highlight">🎨 Theme:</span> White & Red</p>
-        <p><span class="highlight">🎁 Exchange Gift:</span> ₱300 pesos</p>
+        <p><span class="highlight">🎁 Exchange Gift:</span> ₱ 300 pesos</p>
       </article>
 
       <article>
@@ -145,7 +165,7 @@
         <p>
           Put on your best <span class="highlight">white and red outfit</span> and come celebrate with your classmates!  
           Expect laughter, games, music, and memories you’ll never forget!  
-          Don’t forget your <span class="highlight">₱300 exchange gift</span> — it’s the season of giving! 💖
+          Don’t forget your <span class="highlight">₱ 300 exchange gift</span> — it’s the season of giving! 💖
         </p>
       </article>
     </section>
@@ -153,6 +173,7 @@
 
   <footer>
     <p>✨ Organized by 11-Romans | Merry Christmas & Happy Holidays! ✨</p>
+    <blockquote class="quote">“The magic of Christmas never ends when shared with friends.” 🎄</blockquote>
   </footer>
 </body>
 </html>
