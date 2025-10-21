@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11-Romans Christmas Party Poster</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+      color: #333;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: #b30000;
+      color: white;
+      padding: 25px 10px;
+      border-bottom: 5px solid gold;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      letter-spacing: 2px;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from { text-shadow: 0 0 5px gold; }
+      to { text-shadow: 0 0 20px white; }
+    }
+
+    main {
+      padding: 30px;
+      position: relative;
+    }
+
+    section {
+      background-color: white;
+      margin: 20px auto;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 85%;
+      max-width: 700px;
+      position: relative;
+      z-index: 2;
+    }
+
+    h2 {
+      color: #b30000;
+      border-bottom: 2px solid #b30000;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    article {
+      font-size: 1.1em;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+
+    figure {
+      margin: 20px 0;
+    }
+
+    figure img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 10px;
+      border: 3px solid #b30000;
+    }
+
+    footer {
+      background-color: #b30000;
+      color: white;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 5px solid gold;
+      position: relative;
+    }
+
+    .highlight {
+      color: #b30000;
+      font-weight: bold;
+    }
+
+    /* Snowflake animation */
+    .snowflake {
+      position: fixed;
+      top: -10px;
+      color: white;
+      font-size: 1.2em;
+      animation: fall linear infinite;
+      z-index: 1;
+      opacity: 0.8;
+    }
+
+    @keyframes fall {
+      0% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(100vh) rotate(360deg); }
+    }
+
+    /* Random snowflakes positioning */
+    .snowflake:nth-child(1) { left: 10%; animation-duration: 10s; }
+    .snowflake:nth-child(2) { left: 20%; animation-duration: 12s; }
+    .snowflake:nth-child(3) { left: 30%; animation-duration: 9s; }
+    .snowflake:nth-child(4) { left: 50%; animation-duration: 11s; }
+    .snowflake:nth-child(5) { left: 70%; animation-duration: 13s; }
+    .snowflake:nth-child(6) { left: 85%; animation-duration: 10s; }
+
+    /* Twinkling lights */
+    .twinkle {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      text-align: center;
+      z-index: 3;
+    }
+
+    .twinkle span {
+      display: inline-block;
+      background: gold;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin: 0 5px;
+      animation: twinkle 1.5s infinite alternate;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.3; transform: scale(1); }
+      to { opacity: 1; transform: scale(1.4); }
+    }
+
+    .twinkle span:nth-child(odd) {
+      background: white;
+      animation-delay: 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="twinkle">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header>
+    <h1>🎄 11-Romans Christmas Party 🎅</h1>
+    <p>Let's make this season sparkle together!</p>
+  </header>
+
+  <main>
+    <section>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1608889335940-d9c22a3a73d1?auto=format&fit=crop&w=800&q=80" alt="Christmas celebration">
+        <figcaption>Get ready for a fun and elegant celebration!</figcaption>
+      </figure>
+
+      <article>
+        <h2>Event Details</h2>
+        <p><span class="highlight">📅 Date:</span> December 15, 2025</p>
+        <p><span class="highlight">🕗 Time:</span> 8:00 AM - 12:00 PM</p>
+        <p><span class="highlight">📍 Venue:</span> Room 403</p>
+        <p><span class="highlight">🎨 Theme:</span> White & Red</p>
+        <p><span class="highlight">🎁 Exchange Gift:</span> ₱300 pesos</p>
+      </article>
+
+      <article>
+        <h2>Join the Fun!</h2>
+        <p>
+          Put on your best <span class="highlight">white and red outfit</span> and come celebrate with your classmates!  
+          Expect laughter, games, music, and memories you’ll never forget!  
+          Don’t forget your <span class="highlight">₱300 exchange gift</span> — it’s the season of giving! 💖
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>✨ Organized by 11-Romans | Merry Christmas & Happy Holidays! ✨</p>
+  </footer>
+
+  <!-- Snowflakes -->
+  <div class="snowflake">❄</div>
+  <div class="snowflake">✻</div>
+  <div class="snowflake">❅</div>
+  <div class="snowflake">❄</div>
+  <div class="snowflake">✼</div>
+  <div class="snowflake">❆</div>
+</body>
+</html>
